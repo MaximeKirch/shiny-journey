@@ -1,10 +1,17 @@
 import { View, Text } from 'react-native'
 import React from 'react'
+import { Movie } from '../../types/Movies'
+import Preview from '../preview/Preview';
 
-export default function HorizontalList() {
+interface HorizontalListProps {
+    movie: Movie;
+}
+
+export default function HorizontalList<HorizontalListProps>({movie}) {
+   
   return (
     <View>
-      <Text>HorizontalList</Text>
+      <Preview movie={movie}/>
     </View>
   )
 }

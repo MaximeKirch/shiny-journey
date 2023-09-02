@@ -5,6 +5,7 @@ import SuggestedMovies from '../components/explore/SuggestedMovies';
 
 export default function HomeScreen({navigation}) {
 
+
   return (
     <View 
       className="flex-1 bg-black pt-4"
